@@ -5,3 +5,44 @@ Secondary Color (Pastel Pink): #ffd8ef;
 Accent (Pastel Yellow): #fff599;
 Neutral (White): #ffffff;
 */
+
+body {
+    background-color: white; /*white background*/
+    color: black; /*black text*/
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+}
+
+/*applying Crimson Text to headings*/
+
+h1, h2, h3, h4 {
+    font-family: "Crimson Text", serif;
+    color: #a17dd0
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 2.75em;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.35em;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
