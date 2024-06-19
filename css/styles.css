@@ -5,6 +5,18 @@ Secondary Color (Pastel Pink): #ffd8ef;
 Accent (Pastel Yellow): #fff599;
 Neutral (White): #ffffff;
 */
+header {
+  background-color: #a17dd0;
+  text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
     background-color: white; /*white background*/
@@ -13,6 +25,19 @@ body {
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+}
+
+footer {
+  background-color: #a17dd0;
+  display: inline-block;
+  width: 100%;
+}
+footer h2 {
+  text-align: center;
+  color: #fff599;
+}
+footer p {
+  text-align: center;
 }
 
 /*applying Crimson Text to headings*/
@@ -44,16 +69,16 @@ h1, h2, h3, h4 {
   }
   
 a {
-  color: #a17dd0;
+  color: #fff599;
   text-decoration: none; /* No underlining */
 }
 a:hover,
 a:focus {
-  color: #fff599;
+  color: #ffd8ef;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
-  color: #a17dd0;
+  color: #fff599;
 }
 a:active { /* selected link */
   color: #ffd8ef;
@@ -83,14 +108,17 @@ a[href="#"] {
 
 .button.contact {
   background-color: transparent;
-  color: #a17dd0;
+  color: #fff599;
   text-transform: uppercase;
-  border: 2px solid #a17dd0;
+  border: 2px solid #fff599;
+  display: block;
+  text-align: center;
+  align-items: center;
 }
 .button.contact:hover,
 .button.contact:active {
-  background-color: #a17dd0;
-  color: #fff599;
+  background-color: #fff599;
+  color: #a17dd0;
 }
 
 .button.cv {
@@ -104,3 +132,80 @@ a[href="#"] {
   background-color: #a17dd0;
   color: #fff599;
 }
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+/* Header styling */
+.logo {
+  max-width: 250px;
+}
+
+.navigation {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+}
+
+/* Index page styling */
+#hero {
+  background-color: #ffd8ef;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+} 
+
+#hero h1 {
+  text-align: center;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { 
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a; 
+}
+
+/* About page styling */
+#about-heading h1 {
+  text-align: center;
+}
+
+#about-info .row {
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a; 
+}
+
+/*Icons for Footer*/
+#social-media-icons {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#social-media-icons a {
+  margin: 0 10px;
+}
+
+#social-media-icons img {
+  width: 32px;
+  height: 32px;
+}
+

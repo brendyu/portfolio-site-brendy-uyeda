@@ -24,9 +24,9 @@
 <body>
     <header>
         <div>
-            <img src="img/home/brendy-logo.svg" alt="Website Logo">
+            <img src="img/home/brendy-logo.svg" alt="Website Logo" class="logo">
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -39,79 +39,84 @@
         <div>
             <!-- For the hero section -->
             <div id="hero">
-                <h1>
-                    Hi! I'm Brendy.
-                    <br>
-                    <span>
-                        I am a UX/UI Designer based in Honolulu, Hawaii.
-                    </span>
-                </h1>
+                <div class="container">
+                    <h1>
+                        Hi! I'm Brendy.
+                        <br>
+                        <span>
+                            I am a UX/UI Designer based in Honolulu, Hawaii.
+                        </span>
+                    </h1>
+                </div>
             </div>
 
 
             <!-- For the work/projects -->
             <div id="work">
-                <h2>
-                    My Work
-                </h2>
+                <div class="container">
+                    <h2>
+                        My Work
+                    </h2>
 
-                <div>
-                    <!-- open row that holds (2) columns for project -->
-                    <div>
-                        <!-- open first column (used for image) -->
-                        <picture>
-                            <source srcset="img/home/olive_banner-small.png" media="(max-width:767px)">
-                            <img src="img/home/olive_banner-large.png" alt="olive banner">
-                        </picture>
+                    <div class="row">
+                        <!-- open row that holds (2) columns for project -->
+                        <div>
+                            <!-- open first column (used for image) -->
+                            <picture>
+                                <source srcset="img/home/olive_banner-small.png" media="(max-width:767px)">
+                                <img src="img/home/olive_banner-large.png" alt="olive banner">
+                            </picture>
+                        </div>
+                        <!-- end first column -->
+
+                        <div>
+                            <!-- open second column (used for text) -->
+                            <h3>
+                                olive. - Your Mental Health Companion
+                            </h3>
+
+                            <p>
+                                I designed an app that helps the user “check in” with their mental health and achieve
+                                their
+                                goals.
+                            </p>
+
+                            <a href="olive.html" class="button">View Case Study</a>
+                            <!-- button or link label -->
+                        </div>
+                        <!-- end second column -->
                     </div>
-                    <!-- end first column -->
+                    <!-- end row that holds (2) columns for project -->
 
-                    <div>
-                        <!-- open second column (used for text) -->
-                        <h3>
-                            olive. - Your Mental Health Companion
-                        </h3>
+                    <div class="row">
+                        <!-- open row that holds (2) columns for project -->
+                        <div>
+                            <!-- open first column (used for image) -->
+                            <picture>
+                                <source srcset="img/home/lexically_banner-small.png" media="(max-width:767px)">
+                                <img src="img/home/lexically_banner-large.png" alt="My Image">
+                            </picture>
+                        </div>
+                        <!-- end first column -->
 
-                        <p>
-                            I designed an app that helps the user “check in” with their mental health and achieve their
-                            goals.
-                        </p>
+                        <div>
+                            <!-- open second column (used for text) -->
+                            <h3>
+                                Lexically - A Vocabulary App
+                            </h3>
 
-                        <a href="olive.html" class="button">View Case Study</a>
-                        <!-- button or link label -->
+                            <p>
+                                Vocabulary learning has never been this easy with Lexically, a flashcard app I made with
+                                simplistic UI in mind.
+                            </p>
+
+                            <a href="#" class="button">View Case Study</a>
+                            <!-- button or link label -->
+                        </div>
+                        <!-- end second column -->
                     </div>
-                    <!-- end second column -->
+                    <!-- end row that holds (2) columns for project -->
                 </div>
-                <!-- end row that holds (2) columns for project -->
-
-                <div>
-                    <!-- open row that holds (2) columns for project -->
-                    <div>
-                        <!-- open first column (used for image) -->
-                        <picture>
-                            <source srcset="img/home/lexically_banner-small.png" media="(max-width:767px)">
-                            <img src="img/home/lexically_banner-large.png" alt="My Image">
-                        </picture>
-                    </div>
-                    <!-- end first column -->
-
-                    <div>
-                        <!-- open second column (used for text) -->
-                        <h3>
-                            Lexically - A Vocabulary App
-                        </h3>
-
-                        <p>
-                            Vocabulary learning has never been this easy with Lexically, a flashcard app I made with
-                            simplistic UI in mind.
-                        </p>
-
-                        <a href="#" class="button">View Case Study</a>
-                        <!-- button or link label -->
-                    </div>
-                    <!-- end second column -->
-                </div>
-                <!-- end row that holds (2) columns for project -->
             </div>
         </div>
     </main>
@@ -119,7 +124,7 @@
 
     <!-- For the footer  -->
     <footer id="Contact">
-        <div>
+        <div class="container">
             <h2>
                 Get in Touch
             </h2>
@@ -132,7 +137,7 @@
                 <a href="mailto:bmuye13@gmail.com" class="button on contact">Email me</a>
             </div>
 
-            <div>
+            <div id="social-media-icons">
                 <!--Social Media Layout and Placeholders-->
                 <a href="https://www.linkedin.com/in/brendy-uyeda/" target="_blank">
                     <img src="img/home/socials/linkedin-icon.svg" alt="LinkedIn Icon">
