@@ -40,6 +40,61 @@ footer p {
   text-align: center;
 }
 
+#svg-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  #hero span {
+    text-align: center;
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 20px
+  }
+
+  #about-page h3 { 
+    margin-top: 0;
+  }
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
 /*applying Crimson Text to headings*/
 
 h1, h2, h3, h4 {
@@ -136,6 +191,10 @@ a[href="#"] {
 /* Layout styling */
 .container {
   padding: 0 15px;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Header styling */
@@ -182,6 +241,12 @@ nav > ul > li > a {
   border-bottom: 1px solid #4a4a4a; 
 }
 
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* About page styling */
 #about-heading h1 {
   text-align: center;
@@ -208,4 +273,21 @@ nav > ul > li > a {
   width: 32px;
   height: 32px;
 }
+
+/* Vector Styling */
+
+  @keyframes dot-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(50px,0px);}
+  }
+
+  .computer-dot {
+    animation-duration: 10s;
+    animation-name: dot-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-play-state: running;
+  }
+  
 
