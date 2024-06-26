@@ -40,7 +40,7 @@ footer p {
   text-align: center;
 }
 
-#svg-image {
+.svg-image {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -87,6 +87,12 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%
+  }
 }
 
 /* ==============================
@@ -197,6 +203,11 @@ a[href="#"] {
   margin-right: auto;
 }
 
+.text-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 /* Header styling */
 .logo {
   max-width: 250px;
@@ -289,5 +300,23 @@ nav > ul > li > a {
     animation-timing-function: linear;
     animation-play-state: running;
   }
+
+
+@keyframes color-change {
+    0% {fill: #fd6584;}
+    50% {fill: #ffbe72;}
+    100% {fill: #fff599;}
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
   
+@keyframes cloud-move {
+  from {transform: translate(-325.7462, 0);}
+  to {transform: translate(-325.7462 -180);}
+}
+  .cloud-one {
+    animation: 30s cloud-move infinite alternate linear;
+  }
 
