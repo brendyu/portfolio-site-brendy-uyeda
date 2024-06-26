@@ -311,12 +311,4 @@ nav > ul > li > a {
   .sun {
     animation: 4s color-change infinite alternate linear;
   }
-  
-@keyframes cloud-move {
-  from {transform: translate(-325.7462, 0);}
-  to {transform: translate(-325.7462 -180);}
-}
-  .cloud-one {
-    animation: 30s cloud-move infinite alternate linear;
-  }
 
