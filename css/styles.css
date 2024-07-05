@@ -7,11 +7,41 @@ Neutral (White): #ffffff;
 */
 header {
   background-color: #a17dd0;
-  text-align: center;
+  padding: 10px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   position: relative;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #ffd8ef
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 * {
@@ -46,12 +76,22 @@ footer p {
   height: auto;
 }
 
+.logo {
+  max-width: 150px;
+}
+
 /* Media Queries */
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  .logo {
+    max-width: 250px;
+    max-height: auto;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -79,6 +119,22 @@ Medium devices (640px and larger)
 
   #about-page h3 { 
     margin-top: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 }
 
@@ -209,26 +265,15 @@ a[href="#"] {
 }
 
 /* Header styling */
-.logo {
-  max-width: 250px;
-}
 
-.navigation {
-  display: inline-block;
-  width: 100%;
+nav > ul > li > a {
+  padding: 0 15px;
 }
 
 nav > ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
 }
 
 /* Index page styling */
