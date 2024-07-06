@@ -1,16 +1,16 @@
 /*
 Colors used:
-Primary Color (Pastel Purple): #a17dd0;
+Primary Color (Pastel Purple): #8060a9;
 Secondary Color (Pastel Pink): #ffd8ef;
 Accent (Pastel Yellow): #fff599;
 Neutral (White): #ffffff;
 */
 header {
-  background-color: #a17dd0;
+  background-color: #8060a9;
   padding: 10px 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
@@ -18,7 +18,8 @@ header {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -30,17 +31,17 @@ header {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #ffd8ef
+  border-top: 1px solid #ffd8ef;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -49,25 +50,28 @@ header {
 }
 
 body {
-    background-color: white; /*white background*/
-    color: black; /*black text*/
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  background-color: white;
+  color: black;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
 
 footer {
-  background-color: #a17dd0;
+  background-color: #8060a9;
   display: inline-block;
   width: 100%;
 }
+
 footer h2 {
   text-align: center;
   color: #fff599;
 }
+
 footer p {
   text-align: center;
+  color: #fff599;
 }
 
 .svg-image {
@@ -86,7 +90,6 @@ footer p {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   .logo {
     max-width: 250px;
     max-height: auto;
@@ -114,10 +117,10 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 0 20px
+    padding: 0 20px;
   }
 
-  #about-page h3 { 
+  #about-page h3 {
     margin-top: 0;
   }
 
@@ -138,72 +141,68 @@ Medium devices (640px and larger)
   }
 }
 
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
     width: 58.33%;
   }
+
   .col-lg-5 {
-    width: 41.66%
+    width: 41.66%;
   }
 }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Crimson Text", serif;
+  color: #8060a9;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
-/*applying Crimson Text to headings*/
+h1 {
+  font-size: 2.75em;
+}
 
-h1, h2, h3, h4 {
-    font-family: "Crimson Text", serif;
-    color: #a17dd0;
-    line-height: 1.4;
-    font-weight: 700;
-  }
-  h1 {
-    font-size: 2.75em;
-  }
-  
-  h2 {
-    font-size: 2.25em;
-  }
-  
-  h3 {
-    font-size: 1.75em;
-  }
+h2 {
+  font-size: 2.25em;
+}
 
-  h4 {
-    font-size: 1.35em;
-  }
+h3 {
+  font-size: 1.75em;
+}
 
-  img {
-    width: 100%;
-  }
-  
+h4 {
+  font-size: 1.35em;
+}
+
+img {
+  width: 100%;
+}
+
 a {
   color: #fff599;
   text-decoration: none; /* No underlining */
 }
+
 a:hover,
 a:focus {
   color: #ffd8ef;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
+
 a:visited { /* visited link */
   color: #fff599;
 }
+
 a:active { /* selected link */
   color: #ffd8ef;
 }
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #a17dd0;
+  background-color: #8060a9;
   color: #fff599; /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
@@ -211,14 +210,17 @@ a:active { /* selected link */
   border-bottom: none; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover,
 .button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 a[href="olive.html"] {
   color: #fff599; /* needed to override the default link color */
 }
+
 a[href="#"] {
   color: #fff599; /* needed to override the default link color */
 }
@@ -232,21 +234,23 @@ a[href="#"] {
   text-align: center;
   align-items: center;
 }
+
 .button.contact:hover,
 .button.contact:active {
   background-color: #fff599;
-  color: #a17dd0;
+  color: #8060a9;
 }
 
 .button.cv {
   background-color: transparent;
-  color: #a17dd0;
+  color: #8060a9;
   text-transform: uppercase;
-  border: 2px solid #a17dd0;
+  border: 2px solid #8060a9;
 }
+
 .button.cv:hover,
 .button.cv:active {
-  background-color: #a17dd0;
+  background-color: #8060a9;
   color: #fff599;
 }
 
@@ -282,7 +286,7 @@ nav > ul {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-} 
+}
 
 #hero h1 {
   text-align: center;
@@ -292,12 +296,12 @@ nav > ul {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { 
-  padding-bottom: 25px; 
-  border-bottom: 1px solid #4a4a4a; 
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
-.row:after {
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -309,11 +313,10 @@ nav > ul {
 }
 
 #about-info .row {
-  padding-bottom: 25px; 
-  border-bottom: 1px solid #4a4a4a; 
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
-/*Icons for Footer*/
 #social-media-icons {
   margin: 25px 0;
   display: flex;
@@ -332,28 +335,27 @@ nav > ul {
 
 /* Vector Styling */
 
-  @keyframes dot-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(50px,0px);}
-  }
+@keyframes dot-move {
+  from { transform: translate(0, 50px); }
+  to { transform: translate(50px, 0); }
+}
 
-  .computer-dot {
-    animation-duration: 10s;
-    animation-name: dot-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    animation-play-state: running;
-  }
-
+.computer-dot {
+  animation-duration: 10s;
+  animation-name: dot-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
 
 @keyframes color-change {
-    0% {fill: #fd6584;}
-    50% {fill: #ffbe72;}
-    100% {fill: #fff599;}
-  }
+  0% { fill: #fd6584; }
+  50% { fill: #ffbe72; }
+  100% { fill: #fff599; }
+}
 
-  .sun {
-    animation: 4s color-change infinite alternate linear;
-  }
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
 
